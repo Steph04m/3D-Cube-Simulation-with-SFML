@@ -4,14 +4,13 @@ using namespace std;
 using namespace sf;
 
 void Cubo::uptVertici(){
-    
     typedef struct{
         int indici[4];
         float Zmedia;
         Color colore;
     }Faccia;
 
-    const int facceMatrice[6][4] = {
+    const int facceMatrice[6][4]={
         {0,1,2,3},
         {4,5,6,7},
         {0,1,5,4},
@@ -30,15 +29,15 @@ void Cubo::uptVertici(){
     };
 
     vector<Faccia> facce;
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < 6; i++){
         Faccia f;
         float sommaZ = 0;
-        for (int j = 0; j < 4; j++) {
+        for (int j = 0; j < 4; j++){
             f.indici[j] = facceMatrice[i][j];
             sommaZ += verticiArr[f.indici[j]].z;
         }
 
-        f.Zmedia = sommaZ / 4;
+        f.Zmedia = sommaZ/4;
         f.colore = colorArr[i];
         facce.push_back(f);
     }
