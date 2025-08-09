@@ -22,7 +22,7 @@ Exactly, it's a 2D library. Creating a 3D Cube and making it *rotatable* was the
 I chose the Painter's Algorithm over other algorithms for two main reasons:
 
 - *Simplicity.* The Painter's Algorithm's simplicity was a big reason. The algorithm works on a **polygon-by-polygon** basis. It starts by **sorting** the polygons by their depth, from the farthest one to the nearest one and after sorting them it draws them. It has some isssues and it's not a fast algorithm since it renders every object in the scene, even the non-visible ones, but for a 3D Cube it gets the job done.
-- *Easy to implement*. Implementing Painter's Algorithm was easy to implement.##
+- *Easy to implement*. Implementing Painter's Algorithm was easy to implement. 
 
 ## How to Compile and Run the Simulation
 ### Installing SFML library 
