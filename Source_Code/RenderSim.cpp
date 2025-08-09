@@ -3,7 +3,6 @@
 using namespace std;
 using namespace sf;
 
-//Metodi privati
 void RenderSim::initVariables(){
     this->window = nullptr;
 }
@@ -14,7 +13,6 @@ void RenderSim::initWindow(){
     this->window = new RenderWindow(this->videoMode, "Simulazione Cubo");
 }
 
-//Metodi Pubblici
 RenderSim::RenderSim(): c1(200,1){
     initVariables();
     initWindow();
