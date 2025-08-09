@@ -7,8 +7,7 @@ This project consists in an implementation in C++ of a **Colored 3D Cube** using
 The main reasons that I chose C++ over other programming languages are two:
 
  - ***Absolute OOP*** (@BoredDam). While I could have used Processing, it was too easy to do it and it didn't provide a real challenge since many methods are already ready to use. That said, i thought about using C, but since C++ offers great and fast Data Structures like Vector and it was actually easier to write, I choose C++;
- - The **SFML** library. It's a quite easy library to learn and while I'm far from being an expert, I was able to learn the fundamentals in few days. That said, I've encountered a big problem while
-working on this project.
+ - The **SFML** library. It's a quite easy library to learn with a lot of useful classes ready to use, and while I'm far from being an expert, I was able to learn the fundamentals in few days. That said, I've encountered a big problem while working on this project.
 
 ### The Problem: SFML is a 2D library
 Exactly, it's a 2D library. Creating a 3D Cube and making it *rotatable* was the real **challenge**. How I managed to do it:
@@ -23,6 +22,11 @@ I chose the Painter's Algorithm over other algorithms for two main reasons:
 
 - *Simplicity.* The Painter's Algorithm's simplicity was a big reason. The algorithm works on a **polygon-by-polygon** basis. It starts by **sorting** the polygons by their depth, from the farthest one to the nearest one and after sorting them it draws them. It has some isssues and it's not a fast algorithm since it renders every object in the scene, even the non-visible ones, but for a 3D Cube it gets the job done.
 - *Easy to implement*. Implementing Painter's Algorithm was easy to implement. 
+
+### Features and Commands
+The program features an FPS counter in the bottom left corner and some basic commands to rotate the Cube.
+- **WASD** or the Arrow-keys to rotate the Cube.
+- **ESC** to close the program. 
 
 ## How to Compile and Run the Simulation
 ### Installing SFML library 
