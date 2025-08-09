@@ -53,12 +53,11 @@ float RenderSim::ViewFPS(){
 
 void RenderSim::render(){
     
-    //Per aggiungere roba allo schermo
     if(!font.loadFromFile("files_used/arial.ttf")){
         cerr << "Error: Font file not found." << endl;
         exit(EXIT_FAILURE); 
     }
-    Text t1("Cubo 3D colorato", font, 30);
+    Text t1("Colored 3D Cube", font, 30);
     t1.setPosition(10, 0);
     
     //FPS
