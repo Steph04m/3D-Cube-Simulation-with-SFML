@@ -20,7 +20,7 @@ void Cubo::uptVertici(){
         {0,3,7,4}
     };
     
-    Color colors[6]={
+    Color colorArr[6]={
         Color::Red,
         Color::Green,
         Color::Blue,
@@ -39,7 +39,7 @@ void Cubo::uptVertici(){
         }
 
         f.Zmedia = sommaZ / 4;
-        f.colore = colors[i];
+        f.colore = colorArr[i];
         facce.push_back(f);
     }
 
