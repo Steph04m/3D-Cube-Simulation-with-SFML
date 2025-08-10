@@ -44,13 +44,12 @@ sudo dnf install SFML SFML-devel
 sudo apt-get install libsfml-dev
 ```
 
-### Compiling the Source Code
+### Compiling and Running the Source Code 
 
 ```
 g++ main.cpp RenderSim.cpp Cubo.cpp -lsfml-graphics -lsfml-window -lsfml-system -o main
 ```
 Keep in mind that you have to keep all .cpp and .hpp files and the folder *files_used* in the same directory.
-### Run the Simulation
 ```
 ./main
 ```
