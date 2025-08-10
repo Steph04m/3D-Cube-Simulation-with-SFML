@@ -30,6 +30,7 @@ The program features an FPS counter in the bottom left corner and some basic com
 - **WASD** or the Arrow-keys to rotate the Cube.
 - **ESC** to close the program. 
 
+There's also a Framerate Limiter set to 144 FPS max. You can disable it by commenting the line in the *RenderSim.cpp* file (line 71). 
 ## How to Compile and Run the Simulation
 ### Installing SFML library 
 
